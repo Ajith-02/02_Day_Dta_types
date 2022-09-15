@@ -135,3 +135,69 @@ let substr1 = "JavaScript";
 console.log(substr1.substr(1,5));
 let substr2 = "Alex";
 console.log(substr2.substr(1,3));
+console.log(substr1.substr(5));
+
+let substring1 = "America";
+console.log(substring1.substring(0,4));
+console.log(substring1.substring(4,9));
+console.log(substring1.substring(4));
+
+let substring2 = "JavaScript";
+console.log(substring2.substring(0,4));
+console.log(substring2.substring(4,10));
+console.log(substring2.substring(4));
+
+let split1 = "America";
+console.log(split1.split());
+console.log(split1.split(""));
+
+let split2 = "Try until you get";
+console.log(split2);
+console.log(split2.split());
+console.log(split2.split(" "));
+
+let split3 = "India, America, Switzerland";
+console.log(split3.split(","));
+console.log(split3.split(", "));
+
+let trim1 = "   America   ";
+console.log(trim1);
+console.log(trim1.trim(" "));
+let trim2 = "    India";
+console.log(trim2);
+console.log(trim2.trim());
+
+let includes1 = "America is in #1";
+console.log(includes1.includes("#"));
+console.log(includes1.includes("1"));
+console.log(includes1.includes("In"));
+console.log(includes1.includes("in"));
+console.log(includes1.includes("America"));
+
+let includes2 = "India";
+console.log(includes2.includes("ia"));
+console.log(includes2.includes("india"));
+console.log(includes2.includes("India"));
+
+let replace1 = "India";
+console.log(replace1.replace("India", "America"));
+let replace2 = "America";
+console.log(replace2.replace("Amer", "lemur"));
+
+
+let charAt1 = "india";
+console.log(charAt1.charAt(0));
+let charAtLast1 = charAt1.length - 1;
+console.log(charAt1.charAt(charAtLast1));
+
+let charCodeAt1 = "America";
+console.log(charCodeAt1.charCodeAt(0));
+
+let charCodeAtLast = charCodeAt1.length-1;
+console.log(charCodeAt1.charCodeAt(charCodeAtLast));
+
+let indexOf1 = "America and India";
+console.log(indexOf1.indexOf("and"));
+console.log(indexOf1.indexOf("And"));
+console.log(indexOf1.indexOf("India"));
+console.log(indexOf1.indexOf("America"));
