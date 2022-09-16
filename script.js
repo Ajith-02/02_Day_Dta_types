@@ -201,3 +201,67 @@ console.log(indexOf1.indexOf("and"));
 console.log(indexOf1.indexOf("And"));
 console.log(indexOf1.indexOf("India"));
 console.log(indexOf1.indexOf("America"));
+
+let lastIndexOf1 = "America is in NAM region. it is a powerful country";
+console.log(lastIndexOf1.lastIndexOf("a"));
+console.log(lastIndexOf1.lastIndexOf("nam"));
+console.log(lastIndexOf1.lastIndexOf("NAM"));
+console.log(lastIndexOf1.lastIndexOf("America"));
+
+let concat1 = "I am";
+console.log(concat1.concat("from" ,"India"));
+let concat2 = "Amer";
+console.log(concat2.concat("ica"));
+
+let startsWith1 = "America is a country";
+console.log(startsWith1.startsWith("America"));
+console.log(startsWith1.startsWith("a"));
+console.log(startsWith1.startsWith("A"));
+
+let endsWith1 = "I am from earth";
+console.log(endsWith1.endsWith("th"));
+console.log(endsWith1.endsWith("from"));
+console.log(endsWith1.endsWith("from earth"));
+
+let search1 = "hello How are you";
+console.log(search1.search(/how/gi));
+console.log(search1.search("you"));
+
+let match1 = "JavaScript is a scripting language. JavaScript is powerful";
+console.log(match1.match(/JavaScript/));
+console.log(match1.match(/javascript/gi));
+console.log(match1.match("india"));
+
+let regEx = " i born in November 2, 1994";
+let regEx1 = /\d+/gi
+console.log(regEx.match(regEx1)); 
+
+let repeat1 = "hi ";
+console.log(repeat1.repeat(100));
+
+let checkName = "Alex";
+let checkAge = 25;
+let job
+console.log(typeof(checkName));
+console.log(typeof(job));
+console.log(typeof(undefined));
+console.log(typeof(null));
+console.log(typeof(checkAge));
+console.log(typeof(true));
+console.log(typeof(false));
+
+let parseInt1 = "10";
+console.log(parseInt(parseInt1), parseInt1);
+console.log(parseInt1);
+console.log(Number(parseInt1), parseInt1);
+console.log(+(parseInt1));
+
+let float = "10.1"
+let parseFloat1 = parseFloat(float);
+console.log(parseFloat1, float);
+console.log(Number(float), float);
+console.log(+(float), float)
+
+let parseInt2 = parseInt(float);
+console.log(parseInt2, float);
+
