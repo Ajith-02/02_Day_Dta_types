@@ -111,7 +111,23 @@ console.log("because count is: " + becauseCount.match(counting).length);
 
 let freq = "%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching";
 
-let rep1 =/\W+/g;
-let rep2 = " ";
-console.log(freq.replace(rep1,rep2));
+let repe = /\W+/g;
+let repl = " ";
+console.log(freq.replace(repe, repl));
+
+let salaryPerMonth = 5000;
+let annualBonus = 10000;
+let onlineCoursesPerMonth = 15000;
+
+//total annual income
+console.log("total annual income: " + ((salaryPerMonth*12)+annualBonus+(onlineCoursesPerMonth*12)));
+
+let income = "Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month";
+
+let digits = /\d+/g;
+let digitalNumber = income.match(digits);
+console.log(digitalNumber);
+let annualIncome = parseInt((digitalNumber[0]*12) + (digitalNumber[1]*1) + (digitalNumber[2]*12));
+console.log("total annual income: " + annualIncome); 
+
 
